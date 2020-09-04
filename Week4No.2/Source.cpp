@@ -1,18 +1,18 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
-void changeToint(char array[6], int* x, int* y);
+void changeToint(char array[6], int* x, int* y);	//<---Function
 int main()
 {
-	int *hour;											
+	int *hour;								 //<---------Pointer			
 	int *min;										
 	hour = (int*)malloc(2 * sizeof(int));
 	min = (int*)malloc(2 * sizeof(int));
-	char array[6];										
+	char array[6];								//Array		
 	scanf("%s", array);
-	for (int i = 0; i < 5; i++)		
+	for (int i = 0; i < 5; i++)						//Loop
 	{
-		if (array[i] < 48 || array[i]>58)
+		if (array[i] < 48 || array[i]>58)		//Expression and or
 		{
 			printf("Error\n");
 			return 0;
@@ -50,7 +50,7 @@ int main()
 	}
 	else if (mm > 30 && mm != 45)
 	{
-		if (hh + 1 < 12)
+		if (hh + 1 < 12)							//<-----Nested if
 		{
 			if (60 - mm != 1)
 			{
