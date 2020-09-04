@@ -33,20 +33,20 @@ int main()
 	int mm = (10 * (*(min+0))) + *(min+1);
 	if (mm == 0)
 	{
-		printf("It's %d o'clock\n", hh);
+		printf("It's %d o'clock.\n", hh);
 		goto end;
 	}
 	if (mm < 30 && mm!=15)
 	{
-		printf("It's %d minutes past %d\n",mm,hh);
+		printf("It's %d minutes past %d.\n",mm,hh);
 	}
 	else if (mm == 15)
 	{
-		printf("It's aquarter past %d\n",hh);
+		printf("It's a quarter past %d.\n",hh);
 	}
 	else if (mm == 30)
 	{
-		printf("It's half past %d\n",hh);
+		printf("It's half past %d.\n",hh);
 	}
 	else if (mm > 30 && mm != 45)
 	{
@@ -54,31 +54,31 @@ int main()
 		{
 			if (60 - mm != 1)
 			{
-				printf("It's %d minutes to %d\n", 60 - mm, hh + 1);
+				printf("It's %d minutes to %d.\n", 60 - mm, hh + 1);
 			}
 			else 
 			{
-				printf("It's %d minute to %d\n", 60 - mm, hh + 1);
+				printf("It's %d minute to %d.\n", 60 - mm, hh + 1);
 			}
 		}
 		else
 		{
 			if (60 - mm != 1)
 			{
-				printf("It's %d minutes to %d\n", 60 - mm, 01);
+				printf("It's %d minutes to %d.\n", 60 - mm, 01);
 			}
 			else
 			{
-				printf("It's %d minute to %d\n", 60 - mm, 01);
+				printf("It's %d minute to %d.\n", 60 - mm, 01);
 			}
 		}
 	}
 	else if (mm == 45)
 	{
 		if (hh + 1 < 12)
-			printf("It's aquarter to %d\n", hh + 1);
+			printf("It's a quarter to %d.\n", hh + 1);
 		else
-			printf("It's aquarter to %d\n",01);
+			printf("It's a quarter to %d.\n",01);
 	}
 	end :
 	return 0;
